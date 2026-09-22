@@ -12,18 +12,47 @@ Algorithm:
 7.	Return 0
  
 Program:
+```
+#include <stdio.h>
 
-//type your code here
+struct numbers {
+    int a;
+    int b;
+};
 
+// Function to add two numbers
+struct numbers add(struct numbers n) {
+    struct numbers result;
+    result.a = n.a + n.b;   // store sum in 'a'
+    result.b = 0;           // optional, unused
+    return result;          // return structure
+}
 
+int main() {
+    struct numbers n, ans;
+
+    // Input values
+    printf("Enter two numbers: ");
+    scanf("%d %d", &n.a, &n.b);
+
+    // Call function
+    ans = add(n);
+
+    // Output result
+    printf("Sum = %d\n", ans.a);
+
+    return 0;
+}
+
+```
 
 
 Output:
 
-//paste your output screenshots here
-
-
-
+```
+Enter two numbers: 10 20
+Sum = 30
+```
 
 
 Result:
